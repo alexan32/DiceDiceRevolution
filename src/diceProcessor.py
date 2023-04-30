@@ -1,7 +1,6 @@
 from tokenizer import *
 from myParser import TreeGenerator
 from interpreter import evaluateTree, treeToExpression
-import traceback
 
 class DiceProcessor:
 
