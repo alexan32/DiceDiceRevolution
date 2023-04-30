@@ -25,3 +25,33 @@ There is an optional argument called "advantage", which can be set with a value 
 ```python
 total, info = dp.processDiceString("1d20 + prof + dex", {"prof": "2", "dex": "3"}, advantage="a")
 ```
+
+## Dice Modifiers
+
+You can add modifiers to the dice notation to modify a dice roll. Use the following modifiers and selector to alter the the way dice are rolled.
+### Modifiers
+- 'k' keep selection
+- 'p' drop selection
+- 'rr' reroll on when landing on X
+- 'ro' reroll once
+- 'e' explode when landing on X
+- 'mi' set minimum value a roll can land on
+- 'ma' set maximum value a roll can land on
+
+### Selectors
+- 'X' whole number representing a face value on the di
+- 'hX' highest X results
+- 'lX' lowest X results
+- '<X' less than X
+- '>X' greater than X
+
+example:
+```
+dp = DiceProcessor()
+print(dp.processDiceString("4d6kh3")[1])
+``
+output:
+```
+4d6kh3['~1', '4', '4', '5'](13) = 13
+```
+
