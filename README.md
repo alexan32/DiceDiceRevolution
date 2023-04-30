@@ -10,6 +10,12 @@ If you want to dive into the code, start with [main.py](./src/main.py)
 ```python
 dp = DiceProcessor()
 total, info = dp.processDiceString("6d6 + 3(1d6 - 2)")
+print(info)
+```
+
+Ouput: 
+```
+6d6['4', '!6', '4', '2', '5', '4'](25) + 3 * 1d6['4'](4) - 2 = 31
 ```
 
 The processDiceString function returns a tuple containing the total as an integer, as well as an expression which demonstrates more details about the results of the roll.
