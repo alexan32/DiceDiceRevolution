@@ -1,11 +1,11 @@
 # DiceDiceRevolution
-A simple system for parsing dicestrings
+## A simple system for parsing dicestrings
 
 Takes strings in dice notation as input, and evaluates the expression before returning the result. Additionally allows for variables to be in the expression and provides additional options to further modify how the dice are rolled.
 
 If you want to dive into the code, start with main.py(./src/main.py)
 
-Usage example:
+## Usage example:
 
 ```python
 dp = DiceProcessor()
